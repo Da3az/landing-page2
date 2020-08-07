@@ -21,6 +21,7 @@ body{
 
 header{
   height: 40%;
+  max-height: 60%;
   background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.7) ), url("https://recovery1towing.com/wp-content/uploads/2018/08/Recovery1Towing_Gallery-45.jpg");
   background-size: cover;
   background-position:
@@ -32,6 +33,7 @@ header{
 /* ************* */
 .nav{
   height: 10%;
+  max-height: 30%;
   display: flex;
   color: white;
 }
@@ -83,7 +85,7 @@ header{
 .showcase{
   color: white;
   margin: auto;
-  padding-top: 50px;
+  padding-top: 30px;
   height: 90%;
   width: 100%;
   display: flex;
@@ -134,6 +136,38 @@ header{
   height: 50%;
 }
 
+.toggle{
+  cursor: pointer;
+  display: none
+}
+
+#mob-nav{
+  display: none;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 50px;
+  height: 300px;
+
+}
+
+#mob-nav li{
+  padding: 10px 0px 20px 30px;
+  background: #cfd0d2;
+  border-bottom: 2px solid black;
+  width: 100%;
+
+}
+
+#mob-nav li a{
+  color: red;
+  font-size: 30px
+}
+
+#mob-nav li:first-child {
+  border-top: 3px solid #cfd0d2;
+  padding-top: 10px;
+}
+
 @media only screen and (max-width: 1000px) {
   .showcase-text{
     width: 80% !important;
@@ -146,14 +180,14 @@ header{
     text-align: center;
     justify-content: center;
     margin: auto;
-
+    margin-top: 10px;
   }
 
   .call .nav-locations{
     margin: 100px auto 100px auto;
     width: 100%;
     justify-content: center;
-    background: repeating-linear-gradient(90deg, #ee4037, transparent 33.33%)
+    background: repeating-linear-gradient(90deg, #ee4037, transparent 34%)
   }
 
   .call img{
@@ -163,6 +197,25 @@ header{
 
   .showcase p {
     font-size: 30px !important;
+  }
+
+  .navs{
+    width: 80%;
+  }
+
+  .navs li {
+    display: none;
+  }
+
+  .nav .logo {
+    width: 40%;
+  }
+
+  #toggle{
+    display:flex;
+    margin: auto;
+    margin-right: 20px;
+    font-size: 40px;
   }
 
 }

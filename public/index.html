@@ -5,6 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
   </head>
   <body>
      <header>
@@ -18,7 +19,15 @@
            <li><a href="/home">Features</a></li>
            <li><a href="/about">About Us<i class="fas fa-angle-down"></i></a></li>
            <li><a href="/contact">Contact Us</a></li>
+           <li id="toggle"><i class="fas fa-bars"></i></li>
          </ul>
+       </div>
+       <div id="mob-nav" class="nav">
+         <li><a href="/home">Home</a></li>
+         <li><a href="/home">Services</a></li>
+         <li><a href="/home">Features</a></li>
+         <li><a href="/about">About Us<i class="fas fa-angle-down"></i></a></li>
+         <li><a href="/contact">Contact Us</a></li>
        </div>
        <div class="showcase">
          <div class="showcase-text">
@@ -55,5 +64,21 @@
 
        </div>
      </div>
+     <!-- nav toggler -->
+     <script type="text/javascript" defer>
+       var toggled = 1
+       var toggler = document.getElementById('toggle')
+       console.log(toggler)
+       toggler.addEventListener('click',function(e){
+         if(!toggled){
+         console.log('clicked')
+         document.getElementById('mob-nav').style.display = 'none'
+         toggled = 1
+       }else{
+         document.getElementById('mob-nav').style.display = 'block'
+         toggled = 0
+       }
+       })
+     </script>
   </body>
 </html>

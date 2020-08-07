@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  height: 250%;
+  width: 100%;
+}
+
+body{
+  height: 100%;
+  margin: 0px;
+
+}
+
+header{
+  height: 40%;
+  background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.7) ), url("https://recovery1towing.com/wp-content/uploads/2018/08/Recovery1Towing_Gallery-45.jpg");
+  background-size: cover;
+  background-position:
+
+}
+
+/************** */
+/* header */
+/* ************* */
+.nav{
+  height: 10%;
+  display: flex;
+  color: white;
+}
+
+.nav .logo{
+  width: 20%;
+}
+
+.nav a {
+  color: #cfd0d2;
+  text-decoration: none;
+  transition: color .2s ease-in;
+}
+
+.navs{
+  list-style: none;
+  display: flex;
+  width: 80%;
+}
+
+.navs li:first-child a{
+  color: #ed4037
+}
+
+.nav li {
+  margin: auto;
+  width: 15%;
+}
+
+.navs li:hover a {
+  color: #ed4037;
+}
+
+.logo{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: inherit;
+
+  width: 50%;
+}
+
+.showcase{
+  color: white;
+  margin: auto;
+  padding-top: 50px;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.showcase-text{
+  padding-top: 100px;
+  width: 60%;
+  margin-right: auto;
+  margin-left: 50px;
+
+}
+
+.showcase-text h1{
+  font-size: 80px;
+  font-family:'Montserrat', sans-serif;
+  color: #cfd0d2;
+}
+
+.showcase-text p{
+  font-size: 20px;
+}
+
+.call{
+  width: 90%;
+  display:flex;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.call-text{
+  color: #ee4037;
+  font-size: 40px;
+}
+
+.showcase .nav-locations{
+  display: flex;
+  width: 60%;
+  background: repeating-linear-gradient(45deg, #ee4037, transparent 33.33%);
+  margin: auto;
+  height: 80%;
+}
+
+.loc{
+  width: 20%;
+  margin: auto;
+  height: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .showcase-text{
+    width: 80% !important;
+  }
+  .call{
+    flex-direction: column;
+
+    margin: 0px;
+    padding-top: 100px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+
+  }
+
+  .call .nav-locations{
+    margin: 100px auto 100px auto;
+    width: 100%;
+    justify-content: center;
+    background: repeating-linear-gradient(90deg, #ee4037, transparent 33.33%)
+  }
+
+  .call img{
+    width: 20%;
+    margin: auto;
+  }
+
+  .showcase p {
+    font-size: 30px !important;
+  }
+
+}
+/* ******************************************** */
+
+/* *********** */
+/* section1 */
+/* ********** */

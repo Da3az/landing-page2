@@ -20,7 +20,6 @@ body{
 }
 
 header{
-  min-height: 100vh;
   background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.7) ), url("https://recovery1towing.com/wp-content/uploads/2018/08/Recovery1Towing_Gallery-45.jpg");
   background-size: cover;
   background-position:
@@ -85,7 +84,6 @@ header{
   color: white;
   margin: auto;
   padding-top: 30px;
-  height: 90%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -183,7 +181,6 @@ header{
 /* ********** */
 
 .section1{
-  height: 40%;
   padding-top: 50px
 }
 
@@ -292,16 +289,17 @@ header{
   }
 
 }
+
+
+
 @media only screen and (max-width: 1000px) {
   .showcase-text{
     width: 80% !important;
 
   }
 
-
   .call{
     flex-direction: column;
-
     margin: 0px;
     padding-top: 100px;
     text-align: center;
@@ -349,6 +347,7 @@ header{
     flex-direction: column;
     height: 60%;
   }
+
   .service-text{
     height: 50%;
     transform: translate(0,0);
@@ -362,6 +361,89 @@ header{
 
   }
 
-  .section1{height: 60%}
+
+  p{
+    font-size: 3vw;
+  }
+  .service{
+    height: 400px !important;
+  }
+}
+
+
+
+
+/* ****** */
+/* services CSSS */
+/* ******** */
+
+.section2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 700px;
+    margin: auto;
 
 }
+
+.services{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.service {
+    width: 300px;
+    height: 220px;
+    box-shadow: 10px 10px 8px 1px #888888;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+  
+}
+
+.ser-img{
+  display: flex;
+  justify-content: center;
+  height: 50%
+}
+
+
+.ser-img img {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+
+  }
+
+.service div {
+    padding: 10px 10px 10px 10px;
+}
+
+body .ser-txt{
+  padding-left: 40px;
+}
+
+
+/* .section2:after {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+    content: '';
+}
+
+.section2:before {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    border-bottom: 2px solid red;
+    border-right: 2px solid red;
+    content: '';
+    margin-top: 700px;
+    margin-left:78%;
+
+} */

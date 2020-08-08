@@ -20,9 +20,7 @@ body{
 }
 
 header{
-
-  min-height: 40%;
-  height: 45%;
+  min-height: 100vh;
   background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.7) ), url("https://recovery1towing.com/wp-content/uploads/2018/08/Recovery1Towing_Gallery-45.jpg");
   background-size: cover;
   background-position:
@@ -116,6 +114,7 @@ header{
   display:flex;
   margin: auto;
   margin-bottom: 5px;
+
 }
 
 .call-text{
@@ -130,11 +129,17 @@ header{
   margin: auto;
   height: 80%;
 }
+.call img {
+  margin: auto;
+  width: 10%;
+  height: 50%;
+  padding-left: 10px;
+}
 
 .loc{
   width: 20%;
   margin: auto;
-  height: 50%;
+  height: 80%;
 }
 
 #toggle{
@@ -169,10 +174,131 @@ header{
   padding-top: 10px;
 }
 
+
+
+/* ******************************************** */
+
+/* *********** */
+/* section1 */
+/* ********** */
+
+.section1{
+  height: 40%;
+  padding-top: 50px
+}
+
+.service-showcase{
+  height: 60%;
+  width: 90%;
+  display: flex;
+  margin: auto;
+}
+
+
+
+.service-text{
+  padding: 20px 20px 20px 20px;
+  background: #21201f;
+  color: white;
+  width: 50%;
+  transform:translate(50px,-25px);
+  position: relative;
+  z-index: 5
+}
+
+.service-title{
+ text-align: center;
+ padding-bottom: 50px;
+ color: #9b9c9d;
+ display: flex;
+ justify-content: center;
+ margin: auto;
+ width: 30%;
+ }
+
+ .service-title h1{
+  padding-top: 20px;
+ }
+ .service-title:after{
+   position: absolute;
+   height: 9%;
+   width: 20%;
+   border-top: 2px solid #ee4037;
+   content: '';
+ }
+
+ .service-p{
+   width: 60%;
+   padding-bottom: 50px;
+   font-size: 20px;
+   margin: auto;
+ }
+
+.service-title h1{
+ text-align: center;
+ font-size: 50px;
+}
+
+.service-img{
+  width: 50%;
+  transform:translate(-50px,25px);
+}
+
+.service-img img{
+  width: 100%;
+  height: 100%
+}
+
+.offre {
+    display: flex;
+    height: 25%;
+
+    width: 100%;
+}
+
+.offre-show {
+    width: 40%;
+    text-align: center;
+}
+
+.offre > p {width: 60%;}
+
+.offre-show i {
+    font-size: 50px;
+    color: #ee4037;;
+}
+
+.offre-show img{
+  height: 50px;
+  width: 70px;
+}
+
+
+
+
+
+
+/* ************* */
+/* Responsive */
+/* *********** */
+@media only screen and (min-width: 1000px) {
+  .call{
+
+    padding-top: 20%;
+  }
+  .call .nav-locations {
+    height: 100px;
+
+  }
+
+}
 @media only screen and (max-width: 1000px) {
   .showcase-text{
     width: 80% !important;
+
   }
+
+
   .call{
     flex-direction: column;
 
@@ -219,40 +345,23 @@ header{
     font-size: 40px;
   }
 
-
-
-}
-/* ******************************************** */
-
-/* *********** */
-/* section1 */
-/* ********** */
-
-.services {
-    display: flex;
+  .service-showcase{
+    flex-direction: column;
     height: 60%;
-    width: 80%;
-    margin: auto;
-}
+  }
+  .service-text{
+    height: 50%;
+    transform: translate(0,0);
+    width: 100%;
+  }
 
-.service {
-    width: 15%;
-    box-shadow: 5px 5px 10px 5px #0000005e;
-    height: 100%;
-    padding: 10px 10px 10px 10px;
-    text-align: center;
-}
+  .service-img{
+    height: 50%;
+    transform: translate(0,0);
+    width: 100%;
 
-.service img {
-    width: 90%;
-    height: 30%;
-    margin-bottom: 30%;
-}
+  }
 
-.section1 {
-    height: 25%;
-}
+  .section1{height: 60%}
 
-.services-title {
-    height: 20%;
 }

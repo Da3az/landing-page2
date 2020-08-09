@@ -203,7 +203,7 @@ header{
   z-index: 5
 }
 
-.service-title{
+.service-title,.testi-title{
  text-align: center;
  padding-bottom: 50px;
  color: #9b9c9d;
@@ -216,7 +216,8 @@ header{
  .service-title h1{
   padding-top: 20px;
  }
- .service-title:after{
+
+ .service-title:after,.testi-title:after{
    position: absolute;
    height: 9%;
    width: 20%;
@@ -234,6 +235,7 @@ header{
 .service-title h1{
  text-align: center;
  font-size: 50px;
+ font-family: 'Montserrat', sans-serif
 }
 
 .service-img{
@@ -401,7 +403,7 @@ header{
     flex-direction: column;
     margin: auto;
     margin-top: 20px;
-  
+
 }
 
 .ser-img{
@@ -426,6 +428,102 @@ body .ser-txt{
   padding-left: 40px;
 }
 
+.testi-title h1{
+  text-align: center;
+  font-size: 4vw;
+  padding: 20px 20px 20px 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #9b9c9d;
+}
+
+.tests {
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    background: #1d1c1b;
+  }
+
+  .section3 i {
+    color: #ee4037
+  }
+
+.carousel{
+  width:166.66%;
+  display: flex;
+  height: 70%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  transform: translateX(-20%);
+  transition: transform .5s ease-in;
+
+}
+
+.section3 {
+    height: 25%;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.test {
+    margin: 0px 20px 0px 20px;
+    padding: 20px 20px 20px 20px;
+    height: 100%;
+    background: grey;
+    border-radius: 20px;
+    background: #cfd0d2;
+    transition: transform .5s ease-in,opacity .5s ease-in;
+    opacity: .05;
+}
+
+.test p {
+  margin-top: 20px;
+}
+
+.control {
+    transform: translateY(-150px);
+    width: 90%;
+    flex-direction: row;
+    margin: auto;
+}
+
+.tests h2,.tests h3{
+  text-align: center;
+}
+
+.tests i {
+  font-size: 20px;
+}
+
+.control button{
+  background: transparent;
+  width:30px;
+  height:30px;
+  text-align: center;
+  border: none;
+}
+
+.control i {
+  font-size: 30px;
+}
+
+
+
+#right{
+  position: absolute;
+  right: -40px
+}
+
+#left{
+  position: absolute;
+  left: -40px
+
+}
+
+.test:nth-child(3){
+  transform: translateY(50px);
+  opacity: 1
+}
 
 /* .section2:after {
     position: absolute;

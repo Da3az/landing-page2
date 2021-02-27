@@ -22,8 +22,7 @@ body{
 header{
   background-image: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.7) ), url("https://recovery1towing.com/wp-content/uploads/2018/08/Recovery1Towing_Gallery-45.jpg");
   background-size: cover;
-  background-position:
-
+ 
 }
 
 /************** */
@@ -171,7 +170,6 @@ header{
   border-top: 3px solid #cfd0d2;
   padding-top: 10px;
 }
-
 
 
 /* ******************************************** */
@@ -564,6 +562,17 @@ iframe {
     width: 80% !important;
 
   }
+  .loc{
+    margin:px;
+  }
+   
+  .call .nav-locations{
+    width: 100%;
+    justify-content: center;
+    background: repeating-linear-gradient(0deg, #ee4037, transparent 34%);
+    flex-direction: column;
+    
+  }
 
   .call{
     flex-direction: column;
@@ -575,12 +584,6 @@ iframe {
     margin-top: 10px;
   }
 
-  .call .nav-locations{
-    margin: 100px auto 100px auto;
-    width: 100%;
-    justify-content: center;
-    background: repeating-linear-gradient(90deg, #ee4037, transparent 34%)
-  }
 
   .call img{
     width: 20%;
